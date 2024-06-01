@@ -22,5 +22,6 @@ jobs:
     - name: Upload PDF
       uses: actions/upload-artifact@v3
       with:
-        name: LaTeX-PDF
+        name: khaled_sde_resume.pdf # The name of the artifact, should match your PDF file name
         path: khaled_sde_resume.pdf  # Change this to the name of your output PDF file
+        if-no-files-found: error
