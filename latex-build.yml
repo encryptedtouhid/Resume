@@ -1,0 +1,26 @@
+name: Build LaTeX Document
+
+on:
+  push:
+    branches:
+      - main  # Change this to the branch you want to trigger the build on
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up LaTeX environment
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: khaled_sde_resume.tex  # Change this to the name of your main LaTeX file
+        compiler: pdflatex
+
+    - name: Upload PDF
+      uses: actions/upload-artifact@v3
+      with:
+        name: LaTeX-PDF
+        path: khaled_sde_resume.pdf  # Change this to the name of your output PDF file
