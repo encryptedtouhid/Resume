@@ -171,7 +171,6 @@ INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/latex-fonts/lasy7.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm
-INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT khaled_sde_resume.aux
