@@ -1,4 +1,4 @@
-name: Build LaTeX Document
+name: Build and Release LaTeX Document
 
 on:
   push:
@@ -19,9 +19,23 @@ jobs:
         root_file: khaled_sde_resume.tex  # Change this to the name of your main LaTeX file
         compiler: pdflatex
 
-    - name: Upload PDF
-      uses: actions/upload-artifact@v3
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        name: khaled_sde_resume.pdf # The name of the artifact, should match your PDF file name
-        path: khaled_sde_resume.pdf  # Change this to the name of your output PDF file
-        if-no-files-found: error
+        tag_name: v1.0.0  # Change this to the desired tag name
+        release_name: LaTeX Build v1.0.0  # Change this to the desired release name
+        draft: false
+        prerelease: false
+
+    - name: Upload PDF to Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: khaled_sde_resume.pdf  # Change this to the path of your PDF file
+        asset_name: khaled_sde_resume.pdf  # Change this to the desired name of the asset
+        asset_content_type: application/pdf
