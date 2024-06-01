@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.15)  1 JUN 2024 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.15)  1 JUN 2024 23:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -368,9 +368,9 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 96
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 130.
+(Font)              <7> on input line 132.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 130.
+(Font)              <5> on input line 132.
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -395,13 +395,13 @@ Package rerunfilecheck Info: File `khaled_sde_resume.out' has not changed.
 (rerunfilecheck)             Checksum: FFFA489F0863D97476239267791415BE;332.
  ) 
 Here is how much of TeX's memory you used:
- 11944 strings out of 474104
- 185409 string characters out of 5745485
- 1956493 words of memory out of 5000000
- 34180 multiletter control sequences out of 15000+600000
- 564337 words of font info for 60 fonts, out of 8000000 for 9000
+ 11946 strings out of 474104
+ 185428 string characters out of 5745485
+ 1955493 words of memory out of 5000000
+ 34181 multiletter control sequences out of 15000+600000
+ 564635 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,334b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,334b,558s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></o
 pt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/te
 xlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></opt/texliv
@@ -410,7 +410,7 @@ ir/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/texdir/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/texlive/texdir/texmf-d
 ist/fonts/type1/public/cm-super/sfrm1000.pfb></opt/texlive/texdir/texmf-dist/fo
 nts/type1/public/cm-super/sfrm1095.pfb>
-Output written on khaled_sde_resume.pdf (2 pages, 113207 bytes).
+Output written on khaled_sde_resume.pdf (2 pages, 113305 bytes).
 PDF statistics:
  82 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
