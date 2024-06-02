@@ -19,32 +19,14 @@ jobs:
         root_file: khaled_sde_resume.tex  # Change this to the name of your main LaTeX file
         compiler: pdflatex
 
-    - name: Get latest tag
-      id: get_latest_tag
-      run: |
-        latest_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
-        echo "::set-output name=LATEST_TAG::$latest_tag"
-
-    - name: Calculate next tag
-      id: calculate_next_tag
-      run: |
-        latest_tag=${{ steps.get_latest_tag.outputs.LATEST_TAG }}
-        if [ -z "$latest_tag" ]; then
-          next_tag="v1.0.0"
-        else
-          next_version=$(echo $latest_tag | awk -F. '{print $2+1}')
-          next_tag="v1.0.$next_version"
-        fi
-        echo "::set-output name=NEXT_TAG::$next_tag"
-
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.calculate_next_tag.outputs.NEXT_TAG }}
-        release_name: Resume ${{ steps.calculate_next_tag.outputs.NEXT_TAG }}
+        tag_name: v1.0.0  # Change this to the desired tag name
+        release_name: Resume v1.0.0  # Change this to the desired release name
         draft: false
         prerelease: false
 
