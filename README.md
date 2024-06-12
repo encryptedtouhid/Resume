@@ -9,4 +9,7 @@ For any inquiries or additional information, please reach out to me via:
 
 Email: [me@tuhidulhossain.com] <br>
 LinkedIn: [https://www.linkedin.com/in/khaledtuhidul/]  <br>
+
+
+
 Thank you for visiting my resume repository!
