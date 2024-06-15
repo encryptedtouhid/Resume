@@ -3,7 +3,7 @@ name: Build and Release LaTeX Document
 on:
   push:
     branches:
-      - main  # Change this to the branch you want to trigger the build on
+      - release  # Change this to the branch you want to trigger the build on
   workflow_dispatch:  # Allows manual triggering
 jobs:
   build:
