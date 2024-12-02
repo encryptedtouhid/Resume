@@ -1,0 +1,267 @@
+%-------------------------
+% Resume in Latex
+% Author : Khaled Md Tuhidul Hossain
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{listings}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://tuhidulhossain.com/}{\Large Khaled Md Tuhidul Hossain}} & Email : \href{mailto:me@tuhidulhossain.com}{me@tuhidulhossain.com}\\
+  \href{http://tuhidulhossain.com/}{https://www.tuhidulhossain.com} & Mobile : \href{tel:+65 93587649}{+65 93587649} \\
+  \href{https://github.com/encryptedtouhid}{https://github.com/encryptedtouhid} &   Singapore
+\end{tabular*}
+
+
+%-----------SKILL-----------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Programming Languages}
+      { Python, C\#, C++, Java, Javascript }
+    \resumeSubItem{Backend Framework}
+      {FastAPI, Django, .NET, .NET Core , Java Spring boot, KMDF {\&} UMDF Framework,  Node Js}
+    \resumeSubItem{Front-End Framework}
+      {React, Angular, Vue Js, JQuery}
+    \resumeSubItem{Testing Framework}
+      {MSTest, xUnit.Net, JUnit, Mockito, Selenium}
+    \resumeSubItem{Databases}
+      {MS SQL, MySQL, Oracle, SQLite, MongoDB, CosmosDB}
+    \resumeSubItem{Cloud Service}
+      {AWS, Azure}
+    \resumeSubItem{Miscellaneous}
+      {AWS Ec2 T2, Route 53, Elastic Search, Azure AI Search, AWS AI Services, Crystal Report, PowerBI, Kubernetes, Docker, Kafka, RabbitMQ, Azure DevOps, Gitlab, Asana }
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {GIC Private Limited}{Robinson Road, Singapore}
+    {Senior Software Engineer}{Oct 2024 - Present}
+    \resumeItemListStart
+      \resumeItem{}
+        {Spearheaded the design and delivery of PEII Project, managing cross-functional teams to implement end-to-end solutions for trading and portfolio management operations using Python and ReactJS.}
+      \resumeItem{}
+        {Provided architectural guidance to ensure scalability and performance, mentoring junior developers and fostering technical growth.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Crédit Agricole CIB}{Pasir Panjang, Singapore}
+      {Senior Software Engineer}{May 2022 - Sep 2024}
+      \resumeItemListStart
+         \resumeItem{}
+        {As a Full Stack developer, Integrated front-end and back-end systems using .NET Core, Angular, SQL Server, and Docker. Designed and implemented a batch job application for precise data synchronization (Multi-Threading \& CFT) using C\# and Control-M. I collaborate with global teams to develop REST APIs for trade finance using Java Spring Boot \& ReactJs. This involves working on features like counterparty \& eKYC implementation.}
+        \resumeItem{}
+        {Designed and implemented high-performance, scalable, and reliable solutions that were suited for trade banking, security compliance and crucial applications, guaranteeing smooth operation and conformity to legal requirements using .NET Core and ReactJS. }
+        \resumeItem{}
+        {Led code reviews and process optimization for the Workflow Application, improving efficiency by 40\%, and mentored junior developers.}
+        \resumeItem{}
+        {Authored thorough code documentation, architecture diagrams, and technical requirements to facilitate effective teamwork and information exchange. Oversaw and configured CI/CD pipelines using Azure DevOps, and made sure that scalable, high-quality solutions were delivered.}
+        \resumeItem{}
+        {Worked closely with cross-functional teams, such as the business, design, and product teams to guarantee strategy alignment and smooth integration. Updates on project status, technical choices, and overarching goals were given in a clear and succinct manner to stakeholders.}
+
+    \resumeItemListEnd
+      
+    \resumeSubheading
+      {BRAC Bank Limited}{Dhaka, Bangladesh}
+      {Associate Manager (Principal Software Engineer)}{Aug 2021 - April 2022}
+      \resumeItemListStart
+        \resumeItem{}
+          {Took full ownership of the end-to-end delivery of software systems, ensuring the expected quality is achieved while adhering to schedule and budget constraints.}
+        \resumeItem{}
+          {Was Accountable for devising system design and solution architecture strategies during the migration of various legacy banking projects to new technologies.}
+        \resumeItem{}
+          {Coordinated cross-functional teams and stakeholders to build a REST API for SMS Banking using Java Spring Boot, Apache Kafka, and Oracle DB, achieving a 30\% reduction in processing time and boosting customer satisfaction.}
+        \resumeItem{}
+          {Share/Stock Management Portal (Internal PoC): Developed a Share/Stock Management Portal leveraging Node.js for the backend and C++ for performance-critical components (Market Data Handler, Strategy Engine, Order Manager). Incorporated the latest industry trends to drive innovation and enhance user experience. Utilized FIX 4.2 protocol in C++ for reliable and efficient financial information exchange, ensuring robust and low-latency communication between trading systems.}
+      \resumeItemListEnd
+
+      \pagebreak
+    \resumeSubheading
+      {Niramoy HealthTech Limited (Startup) }{Dhaka, Bangladesh}
+      {Principal Software Engineer}{Feb 2021 - Jul 2021}
+      \resumeItemListStart
+        \resumeItem{Electronic Health Records}
+          {Ensured conceptual completeness of technical solutions and managed quality and continuous improvement of architecture to make it scalable and stable. 
+          Programmed and implemented a payment gateway service for a telemedicine application using .NET Core, adhering to ISO 8583 standards. 
+          Reviewed code and provided feedback relative to best practices to team members and helped everyone to improve.
+          Responsible for continuous integration and delivery of the EHR application through the Azure DevOps CI/CD pipeline.}
+        \resumeItem{HL7 Data Broker}
+          {Developed an HL7 bidirectional broker using Java to synchronize radiology and hematology machines, enabling communication between EHR applications and PACS servers. \newline}
+      \resumeItemListEnd
+      \resumeSubSubheading
+      {Senior Software Engineer}{May 2018 - Jan 2021}
+      \resumeItemListStart
+        \resumeItem{Telemedicine Web \& Mobile Application}
+         {Lead a team of 8 developers working on telemedicine microservice based SaaS Application using .Net Core, Angular js, Sql Server and Java for developing android application. Additionally used Twilio SDK to develop Video Calling functionalities. Collaborated with all stakeholders including business analyst, product owners, team leads and
+         SME for Innovative product design.}
+        \resumeItem{Cross-Platform Prescription Application}
+         {Developed \& implemented Cross-platform desktop prescription application using ElectronJs, SQLite,  Vue Js \& .Net Core Rest Api. Served 1 large govt hospital, 1000 doctor \& over ten thousand patients in 3 month.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {LEADS Corporation Limited}{Dhaka, Bangladesh}
+      {Software Engineer}{Nov 2016 - Apr 2018}
+      \resumeItemListStart
+      \resumeItem{Treasury Management}
+      {Developed and implemented new functionality for the Nostro and Vostro modules, and integrated Active Directory authentication using Microsoft AD services, ASP.NET WebForms (C\#), JQuery and Oracle database. Provided L3 support \& effectively resolved bugs and issues within.}
+        \resumeItem{Agent Banking Solution}
+          {Developed a fingerprint middleware service to standardize data from multiple fingerprint devices \& implemented EKYC, CASH IN, \& CASH OUT functionalities using .NET (C\#), AngularJs, Crystal Reports, SourceAFIS and Oracle database.}
+        \resumeItem{Mobile Banking Application}
+          {Developed and implemented a mobile financial application using Xamarin and  Back-End REST APIs for a reputed bank using .NET Core \& SQL SERVER . Optimized \& fixed bug for existing modules. }
+      \resumeItemListEnd
+
+
+      \resumeSubheading
+      {Inveitco Pty Ltd (Startup)}{Dhaka, Bangladesh}
+      {Software Engineer}{Mar 2015 - Feb 2016}
+      \resumeItemListStart
+        \resumeItem{Electronic Health Record System}
+          {Implemented user interfaces for the doctor appointment module. Collaborate with the teammates, Designed and Coding RESTful APIs, enabling seamless integration with third-party services. Resolved various backend issues reported by QA and support teams, ensuring system stability and performance using Bootstrap, JQuery, PHP, CodeIgniter, MySQL.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+  %-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {American International University-Bangladesh}{Dhaka, Bangladesh}
+    {Bachelor of Science in Computer Science and Engineering}{May. 2011 -- Feb. 2016}   
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Blog Application}
+      {Blog Engine Developed With Blazor {\&} .NET 8.0.}
+    \resumeSubItem{Fetch Web Pages CLI}
+      {Implemention of a command line program that can fetch web pages and saves them to disk for later retrieval and browsing using Python {\&} Docker.}
+    \resumeSubItem{CXCommenter}
+      {A Visual Studio Extension for Automatic XML Commenting using C\#.}
+    \resumeSubItem{CpuGuard.NET}
+      {CPU Usage Control for ASP.NET Core Applications NuGet package  built with C\#.}
+    \resumeSubItem{High-Frequency Trading (HFT) Engine}
+      {A sophisticated software system designed to execute a large number of financial transactions at extremely high speeds using C\#.}
+    \resumeSubItem{LLTS-Engine}
+      {A basic Low Latency Trading Engine  built with C++.}
+    \resumeSubItem{Data Streaming Platform}
+      {A streaming platform  built with Java Spring Boot , Apache Kafka,  React which is capable of  stream videos and audio files.}
+  \resumeSubHeadingListEnd
+
+
+%-----------Publications-----------------
+\section{Publications}
+\resumeSubHeadingListStart
+  \resumeSubItem{OTR: A Transparent database approach for using ontology in information systems}
+    {\newline AIUB Journal of Science and Engineering (AJSE) vol. 14, no. 1 · Aug 1, 2015.}
+\resumeSubHeadingListEnd
+
+% --------PROGRAMMING SKILLS------------
+% \section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: C\# , Java , Python , Javascript, C++}
+%      \hfill
+%      \textbf{Framework}{: .NET Core , Spring boot, Django, Node Js}
+%    }
+%    \item{
+%      \textbf{Frontend}{: React, Angular, Vue Js, JQuery}
+%      \hfill
+%      \textbf{Testing}{: MSTest, xUnit.Net, JUnit, Mockito, Selenium}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
